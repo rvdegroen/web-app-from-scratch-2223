@@ -1,8 +1,14 @@
 /*custom colors*/
 :root {
-  --card-background: ;
+  --card-background-front: #f7edf0;
+  --card-background-back: #50282f;
   --gradient-background: linear-gradient(to bottom right, #280041, #00011c);
-  --light-background: #f7edf0;
+  --accent-color: #e63946;
+  --accent-color-background: #f9d7d3;
+  --deco-color: #f4afab;
+  --deco-color-darker: #ff857e;
+  --text-color-light: #011627;
+  --text-color-dark: #ff857e;
 }
 
 /*remove browser styling*/
@@ -17,8 +23,12 @@
 body {
   height: 100vh;
   background: var(--gradient-background);
+  font-family: "Work Sans", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+/* card container */
 .container {
   position: absolute;
   /* src to center horizontally & vertically: https://stackoverflow.com/questions/14123999/center-a-div-horizontally-and-vertically*/
@@ -26,41 +36,156 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 700px;
+  width: 600px;
   height: 300px;
+  overflow: hidden;
+  border: 2px solid var(--);
 }
 
+/* actual card */
 .card {
   position: absolute;
   width: 100%;
   height: 100%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
   transition: transform 1s;
   transform-style: preserve-3d;
 }
 
+/* card container rotation when hovering */
 .container:hover .card {
   transform: rotateY(180deg);
   transition: transform 1s;
 }
 
+/* styling for the front (mostly) & back  of the card*/
 .front,
 .back {
+  display: flex;
   position: absolute;
   height: 100%;
   width: 100%;
-  background: white;
-  line-height: 300px;
-  color: #03446a;
+  background: var(--card-background-front);
+  color: var(--card-background-back);
   text-align: center;
-  font-size: 60px;
-  border-radius: 5px;
+  border-radius: 3px;
   backface-visibility: hidden;
 }
 
+/* styling for front of the card */
+.front > img {
+  position: relative;
+  height: 180px;
+  align-self: center;
+}
+
+/* front section styling */
+.section-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 5px;
+  margin: -20px;
+  color: var(--text-color-light);
+}
+
+/* front middle background color */
+.section-front > div {
+  background-color: var(--accent-color-background);
+  padding: 25px 37px;
+}
+
+/* accent colors*/
+.accent-color,
+.name {
+  color: var(--accent-color);
+}
+
+/* design lines*/
+.line1 {
+  position: absolute;
+  background-color: var(--deco-color);
+  height: 4px;
+  width: 550px;
+  right: 0;
+  top: 40px;
+  border-radius: 5px;
+}
+
+.line2 {
+  position: absolute;
+  background-color: var(--deco-color-darker);
+  height: 2px;
+  width: 380px;
+  right: 0;
+  top: 55px;
+  border-radius: 5px;
+}
+
+.line3 {
+  position: absolute;
+  background-color: var(--deco-color);
+  height: 1px;
+  width: 300px;
+  right: 0;
+  top: 70px;
+  border-radius: 5px;
+}
+
+.line4 {
+  position: absolute;
+  background-color: var(--deco-color-darker);
+  height: 2px;
+  width: 300px;
+  right: 0;
+  bottom: 70px;
+  border-radius: 5px;
+}
+
+.line5 {
+  position: absolute;
+  background-color: var(--deco-color);
+  height: 1px;
+  width: 360px;
+  right: 0;
+  bottom: 55px;
+  border-radius: 5px;
+}
+
+.line6 {
+  position: absolute;
+  background-color: var(--deco-color);
+  height: 3px;
+  width: 550px;
+  right: 0;
+  bottom: 30px;
+  border-radius: 5px;
+}
+
+/* styling for the back */
 .back {
-  background: #03446a;
-  color: white;
   transform: rotateY(180deg);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: var(--text-color-light);
+}
+
+.back > div {
+  display: grid;
+}
+
+/* styling for the logo */
+img[alt~="logo"] {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    transform: rotate(90deg);
+  }
 }
