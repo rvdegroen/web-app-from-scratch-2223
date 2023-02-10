@@ -164,24 +164,55 @@ body {
 }
 
 /* styling for the back */
-.back {
-  transform: rotateY(180deg);
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  color: var(--text-color-light);
-}
-
-.back > div {
-  display: grid;
-}
-
 /* styling for the logo */
 img[alt~="logo"] {
   position: absolute;
   width: 100%;
   margin: 0 auto;
   height: 50px;
-  top: 30px;
+  bottom: 20px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: var(--text-color-light);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--card-background-front);
+}
+
+.back h2,
+.back h3 {
+  font-weight: 700;
+}
+
+.back h3 {
+  text-align: left;
+  padding: 3px 0;
+}
+
+.section-back-skills {
+  margin: auto;
+}
+
+.section-back-skills ul {
+  display: flex;
+  gap: 5px;
+}
+
+.section-back-skills ul > li {
+  list-style: none;
+  font-weight: 400;
+  background-color: var(--text-color-dark);
+  padding: 4px 10px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.section-back-contact img {
+  height: 50px;
 }
 
 @media only screen and (max-width: 600px) {
