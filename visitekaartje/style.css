@@ -2,11 +2,7 @@
 :root {
   --card-background-front: #f7edf0;
   --card-background-back: #50282f;
-  --gradient-background: radial-gradient(
-    circle,
-    rgba(148, 187, 233, 1) 0%,
-    rgb(255, 169, 191) 100%
-  );
+  --gradient-background: radial-gradient(circle, rgb(46, 0, 19) 0%, rgb(20, 13, 18) 100%);
   --accent-color: #e63946;
   --accent-color-background: #f9d7d3;
   --deco-color: #f4afab;
@@ -44,7 +40,7 @@ body {
   height: 300px;
   overflow: hidden;
   border: 2px solid var(--);
-  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.384));
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.438));
 }
 
 /* actual card */
