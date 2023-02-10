@@ -171,6 +171,7 @@ img[alt~="logo"] {
   margin: 0 auto;
   height: 50px;
   bottom: 20px;
+  left: 25%;
 }
 
 .back {
@@ -183,9 +184,15 @@ img[alt~="logo"] {
   background-color: var(--card-background-front);
 }
 
+/* skills section */
+
 .back h2,
 .back h3 {
   font-weight: 700;
+}
+
+.back h2 {
+  margin-bottom: 5px;
 }
 
 .back h3 {
@@ -194,7 +201,7 @@ img[alt~="logo"] {
 }
 
 .section-back-skills {
-  margin: auto;
+  margin: 20px auto;
 }
 
 .section-back-skills ul {
@@ -211,8 +218,35 @@ img[alt~="logo"] {
   text-align: center;
 }
 
+/* contact section */
+.section-back-contact {
+  padding-top: 20px;
+  color: var(--card-background-front);
+  background-color: var(--card-background-back);
+}
+
 .section-back-contact img {
+  display: inline-block;
   height: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.section-back-contact ul {
+  margin-left: 20px;
+}
+
+.section-back-contact ul > li {
+  list-style: none;
+  font-weight: 400;
+  border-radius: 30px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.section-back-contact a {
+  color: var(--card-background-front);
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
