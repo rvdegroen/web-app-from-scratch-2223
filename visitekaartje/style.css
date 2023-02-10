@@ -111,7 +111,8 @@ body {
   width: 550px;
   right: 0;
   top: 40px;
-  border-radius: 5px;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
 }
 
 .line2 {
@@ -121,7 +122,8 @@ body {
   width: 380px;
   right: 0;
   top: 55px;
-  border-radius: 5px;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
 }
 
 .line3 {
@@ -131,7 +133,8 @@ body {
   width: 300px;
   right: 0;
   top: 70px;
-  border-radius: 5px;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
 }
 
 .line4 {
@@ -141,7 +144,8 @@ body {
   width: 300px;
   right: 0;
   bottom: 70px;
-  border-radius: 5px;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
 }
 
 .line5 {
@@ -151,7 +155,8 @@ body {
   width: 360px;
   right: 0;
   bottom: 55px;
-  border-radius: 5px;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
 }
 
 .line6 {
@@ -161,7 +166,8 @@ body {
   width: 550px;
   right: 0;
   bottom: 30px;
-  border-radius: 5px;
+  border-top-left-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
 }
 
 /* styling for the back */
