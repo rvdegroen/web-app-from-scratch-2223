@@ -263,5 +263,6 @@ img[alt~="logo"] {
 @media only screen and (max-width: 600px) {
   body {
     transform: rotate(90deg);
+    height: 100vh;
   }
 }
