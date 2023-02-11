@@ -211,6 +211,10 @@ img[alt~="logo"] {
   margin: 20px auto;
 }
 
+.section-back-skills > h2 {
+  margin-bottom: 13px;
+}
+
 .section-back-skills ul {
   display: flex;
   gap: 5px;
