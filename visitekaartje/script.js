@@ -5,11 +5,11 @@ const myMemberUrlSlug = "https://whois.fdnd.nl/api/v1/member/roshnie";
 let $name = document.querySelector(".name");
 
 const writeBusinessCardInfo = async (API) => {
-  const myData = await fetch(API)
-    .then((response) => response.json())
-    .then((myData) => myData.member);
-  console.log(myData);
-  $name.innerHTML = myData.name;
+  const response = await fetch(API);
+  const json = await response.json();
+  const member = json.member;
+  console.log(member);
+  $name.innerHTML = member.name;
 };
 
 writeBusinessCardInfo(myMemberUrl);
