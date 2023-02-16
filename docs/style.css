@@ -263,8 +263,6 @@ img[alt~="logo"] {
   padding-bottom: 5px;
 }
 
-/* border bottom link styling for contatc */
-/* src: https://codepen.io/rvdegroen/pen/GRXKorR?editors=1100 */
 .section-back-contact a:after {
   content: "";
   display: block;
@@ -273,12 +271,13 @@ img[alt~="logo"] {
   bottom: 0;
   height: 2px;
   margin: -5px 0;
-  left: 0;
-  background-color: var(--card-background-front);
+  right: 0;
+  background-color: white;
   transition: all 0.4s ease-in 0s;
 }
 
 .section-back-contact a:hover:after {
+  left: 0;
   width: 100%;
 }
 
