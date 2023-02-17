@@ -31,8 +31,16 @@ blockquote {
   align-self: center;
 }
 
+ul {
+  display: flex;
+}
+
 /* .shredder {
 } */
+
+.paper-stack {
+  cursor: pointer;
+}
 
 .paper-stack:has(div) {
   display: flex;
@@ -47,3 +55,8 @@ blockquote {
 /* .paper-stack > div:nth-of-type(1) {
   transform: rotate(90deg);
 } */
+
+/* for loading state */
+.loading {
+  cursor: wait;
+}
