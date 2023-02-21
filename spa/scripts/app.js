@@ -1,23 +1,27 @@
 // Variables
-const myApi = "https://www.officeapi.dev/api/quotes/random/";
+const myApi = "https://www.officeapi.dev/api/";
 const $paper = document.querySelector(".paper-stack");
 
 // fetch a random quote
 const getQuote = async (api) => {
   try {
-    // variables
+    // $ stands for html variables -> easier to recognize
     const $quote = document.querySelector("blockquote");
-    const $firstName = document.querySelector(".first-name");
-    const $surname = document.querySelector(".surname");
+    const $firstName = document.querySelector("span:nth-of-type(1)");
+    const $surname = document.querySelector("span:nth-of-type(2)");
 
-    const response = await fetch(api);
-    const data = await response.json();
-    console.log(data);
+    // fetch random quote
+    const quote = await (await fetch(api + "quotes/random")).json();
+    console.log(quote);
+
+    // fetch random character
+    const character = await (await fetch(api + "characters/random")).json();
+    console.log(character);
 
     // write data in html
-    $quote.textContent = data.data.content;
-    $firstName.textContent = data.data.character.firstname;
-    $surname.textContent = data.data.character.lastname;
+    $quote.textContent = quote.data.content;
+    $firstName.textContent = quote.data.character.firstname;
+    $surname.textContent = quote.data.character.lastname;
   } catch (error) {
     console.error(error);
   }
