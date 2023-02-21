@@ -315,25 +315,19 @@ nav li a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  html {
-    width: 100vw;
-    height: 100vh;
-  }
   body {
     transform: rotate(90deg);
   }
 
   /* to display the nav */
-  /*
   nav > ul {
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 9em;
   }
-  */
 
-  nav {
+  /* nav {
     display: none;
-  }
+  } */
 }
