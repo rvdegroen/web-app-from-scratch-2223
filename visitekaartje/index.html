@@ -22,27 +22,36 @@
 
   <body>
     <!-- source to make the card: https://codepen.io/edeesims/pen/wvpYWW -->
-    <div class="container">
-      <div class="card">
-        <div class="front">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    <!-- card container -->
+    <main>
+      <!-- container for the actual card -->
+      <div>
+        <!-- front of the card -->
+        <div>
+          <!-- styling for the lines on front of the card top side -->
+          <div></div>
+          <div></div>
+          <div></div>
           <img src="./images/profile-pic.png" alt="image of Roshnie" />
+          <!-- text section for the front with pink bg next to the img -->
           <section class="section-front">
             <div>
+              <!-- using the span for color change & the class for js -->
               <h1>Hello, I'm <span class="name"></span>.</h1>
-              <h2>I'm a <span class="accent-color">creative web-designer</span>.</h2>
+              <h2>I'm a <span>creative web-designer</span>.</h2>
             </div>
           </section>
-          <div class="line4"></div>
-          <div class="line5"></div>
-          <div class="line6"></div>
+          <!-- styling for the lines on front of the card bottom side -->
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
+        <!-- back of the card -->
         <div class="back">
+          <!-- my logo -->
           <img src="./images/logo.svg" alt="logo" />
-
-          <section class="section-back-skills">
+          <!-- section back of the card for skills -->
+          <section>
             <h2>My Skills</h2>
             <h3>Design</h3>
             <ul>
@@ -66,7 +75,8 @@
               <li>MongoDB</li>
             </ul>
           </section>
-          <section class="section-back-contact">
+          <!-- section back of the card for contact -->
+          <section>
             <h2>Contact</h2>
             <ul>
               <li>
@@ -82,7 +92,7 @@
           </section>
         </div>
       </div>
-    </div>
+    </main>
     <script async src="./script.js"></script>
   </body>
 </html>
