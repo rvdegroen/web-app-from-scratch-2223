@@ -3,7 +3,7 @@ const myApi = "https://www.officeapi.dev/api/quotes/random/";
 const $paper = document.querySelector(".paper-stack");
 
 // fetch a random quote
-getQuote = async (api) => {
+const getQuote = async (api) => {
   // variables
   const $quote = document.querySelector("blockquote");
   const $firstName = document.querySelector(".first-name");
