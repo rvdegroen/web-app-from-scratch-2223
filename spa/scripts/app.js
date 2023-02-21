@@ -5,9 +5,9 @@ const $paper = document.querySelector(".paper-stack");
 // fetch a random quote
 getQuote = async (api) => {
   // variables
-  let $quote = document.querySelector("blockquote");
-  let $firstName = document.querySelector(".first-name");
-  let $surname = document.querySelector(".surname");
+  const $quote = document.querySelector("blockquote");
+  const $firstName = document.querySelector(".first-name");
+  const $surname = document.querySelector(".surname");
 
   const response = await fetch(api);
   const data = await response.json();
