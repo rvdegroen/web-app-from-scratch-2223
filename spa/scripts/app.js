@@ -4,19 +4,23 @@ const $paper = document.querySelector(".paper-stack");
 
 // fetch a random quote
 const getQuote = async (api) => {
-  // variables
-  const $quote = document.querySelector("blockquote");
-  const $firstName = document.querySelector(".first-name");
-  const $surname = document.querySelector(".surname");
+  try {
+    // variables
+    const $quote = document.querySelector("blockquote");
+    const $firstName = document.querySelector(".first-name");
+    const $surname = document.querySelector(".surname");
 
-  const response = await fetch(api);
-  const data = await response.json();
-  console.log(data);
+    const response = await fetch(api);
+    const data = await response.json();
+    console.log(data);
 
-  // write data in html
-  $quote.textContent = data.data.content;
-  $firstName.textContent = data.data.character.firstname;
-  $surname.textContent = data.data.character.lastname;
+    // write data in html
+    $quote.textContent = data.data.content;
+    $firstName.textContent = data.data.character.firstname;
+    $surname.textContent = data.data.character.lastname;
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 getQuote(myApi);
