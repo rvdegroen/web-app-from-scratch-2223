@@ -317,6 +317,7 @@ nav li a:hover {
 @media only screen and (max-width: 600px) {
   body {
     transform: rotate(90deg);
+    overflow: hidden;
   }
 
   /* to display the nav */
@@ -325,6 +326,10 @@ nav li a:hover {
     display: flex;
     justify-content: center;
     margin-top: 9em;
+  }
+
+  nav li {
+    list-style: none;
   }
 
   /* nav {
