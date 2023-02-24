@@ -1,5 +1,7 @@
 // Variables
+// global so I can change the api easily
 const myApi = "https://www.officeapi.dev/api/";
+// global because it's an eventlistener in global scope
 const $paper = document.querySelector(".paper-stack");
 
 // fetch a random quote
@@ -27,12 +29,10 @@ const getQuote = async (api) => {
   }
 };
 
+// calling functions
 getQuote(myApi);
+
+// eventlisteners
 // When I click, the arrow functuon runs getQuote
 // if I didn't use a param, I could just use getQuote as 2nd param
 $paper.addEventListener("click", () => getQuote(myApi));
-
-//fetch("https://officeapi.dev/api/quotes/random")
-//  .then((response) => response.json())
-//  .then((data) => console.log(data))
-//  .catch((error) => console.error(error));
