@@ -18,32 +18,47 @@
     <script src="./scripts/app.js" defer></script>
   </head>
 
+  
   <body>
-    <!-- header -->
     <header>
-      <h1>The Office Quotes Quiz</h1>
+      <nav>
+        <a href="#/">Home</a>
+        <a href="#/game">Game</a>
+        <a href="#/characters">Characters</a>
+      </nav>
     </header>
-    <!-- main -->
     <main>
-      <!-- shredding paper animation, purely styling -->
-      <div class="shredder"></div>
-      <!-- paper stacks to show the quote on, purely styling -->
-      <div class="paper-stack">
-        <!-- multiple amount of paper that's on the paper stack -->
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <!-- element to show the quote in -->
-        <blockquote></blockquote>
+      <div id="pageHome" class="page hidden">
+        Welcome
       </div>
-      <!-- user can choose different characters: who said the quote? -->
-      <ul>
-        <li><span></span> <span></span></li>
-        <li><span></span> <span></span></li>
-        <li><span></span> <span></span></li>
-        <li><span></span> <span></span></li>
-      </ul>
+
+      <div id="pageGame" class="page hidden">
+        <h1>Game</h1>
+        
+        <div id="game__quote"></div>
+        <div id="game__choices"></div>
+      </div>
+
+      <div id="pageCharacters" class="page hidden">
+        <h1>Characters</h1>
+
+        <input id="characters__filter" placeholder="Search character"></input>
+        
+        <div>
+          <button id="characters__sortAsc">Sort by first name ascending</button>
+          <button id="characters__sortDesc">Sort by first name descending</button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+            </tr>
+          </thead>
+          <tbody id="characters__tbody"></tbody>
+        </table>
+      </div>
     </main>
   </body>
 </html>
