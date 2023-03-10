@@ -1,6 +1,7 @@
 import { initCharacters } from "./characters.js";
 import { initGame } from "./game.js";
 
+// object of routes, when element is element, init function runs, first init is empty
 const routes = {
   "/": {
     element: "pageHome",
@@ -16,6 +17,7 @@ const routes = {
   },
 };
 
+// get path without the # and returns a string
 function getPath() {
   // localhost:3000 -> ""
   // localhost:3000/ -> ""
@@ -31,6 +33,7 @@ function getPath() {
   return hash.slice(1);
 }
 
+// function on what to hide and what to show
 export function renderPage() {
   const pages = document.querySelectorAll(".page");
 
@@ -42,9 +45,14 @@ export function renderPage() {
   }
 
   // Show correct page
+  // get the string from getpath into path
   const path = getPath();
+  // a variable cannot have slash, so you can use [] / or access property of object
+  // routes/home for example
   const route = routes[path];
   const page = document.getElementById(route.element);
   page.classList.remove("hidden");
+  // routes/path => runs different init function and decides which page it will show
+  // routes.home or routes.game etc
   route.init();
 }
