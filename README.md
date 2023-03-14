@@ -1,56 +1,55 @@
-# Web App From Scratch @cmda-minor-web 2021 - 2022
+# The Office Quiz
 
-In this course you will learn to build a web application without frameworks or unnecessary libraries, but with vanilla HTML, CSS & JavaScript as much as possible. The end result is a modular, single page web app (SPA). Data will be retrieved from an external API, manipulated and finally shown in the UI of the App. You will learn to apply interface principles when building and testing the interface. With the gained knowledge you will be able to build interactive prototypes, based on a user story and real data. Also you will gain a better understanding of how API's, frameworks and libraries work.
+The office quiz is a responsive website for bored students (or for bored people in general) who also happen to be enjoy the tv show "The Office" (US) and want to enjoy themselves a little bit with a quiz.
 
-## Assignment
+The website contains a quiz in which you need to guess which character from the tv show, said the quote.
 
-1. [Visitekaartje](https://github.com/cmda-minor-web/web-app-from-scratch-2223/blob/main/course/week-1.md#1-visitekaartje): Ontwerp en maak met HTML, CSS en JS een visitekaartje.
-2. [Squadpagina](https://github.com/cmda-minor-web/web-app-from-scratch-2223/blob/main/course/week-1.md#2-squadpagina): Ontwerp en maak met je team een squadpagina waarin je de verschillende visitekaartjes toont.
-3. [Single Page App](https://github.com/cmda-minor-web/web-app-from-scratch-2223/blob/master/course/week-2.md): Design and build a single page web app based on a User Story.
+![the office quiz](./image/view.png)
 
----
+On the following site is a live demo: https://rvdegroen.github.io/web-app-from-scratch-2223/spa/
 
-## Program
+# Table of Contents
 
-| Planning | Maandag | Dinsdag | Vrijdag  |
-|---|---|---|---|
-| [Week 1 - Hellooo 🤸](https://github.com/cmda-minor-web/web-app-from-scratch-2223/blob/master/course/week-1.md) | Introduction + visitekaartje | Squadpagina | Teambespreking |
-| [Week 2 - Hello API 🐒](https://github.com/cmda-minor-web/web-app-from-scratch-2223/blob/master/course/week-2.md) | College + briefing opdracht | College + Work | Feedbackgesprekken |
-| [Week 3 - Refactor 🛠](https://github.com/cmda-minor-web/web-app-from-scratch-2223/blob/master/course/week-3.md)  | College + work  | College + work | Feedbackgesprekken  |
-| Voorjaarsvakantie |  |  |  |
-| [Week 4 - Wrapping up 🎁](https://github.com/cmda-minor-web/web-app-from-scratch-2223/blob/master/course/week-4.md)  | College + work  | Review + work | Beoordelingsgesprekken  |
+# Used Technologies
 
-## Best Practices
+I used the following technologies:
 
-All work during this course will be tested against our [Best Practices for JavaScript](https://github.com/cmda-minor-web/best-practices/blob/master/javascript.md).
+1. Html
+2. Css
+3. Javascript
+4. The Office API
 
-## Rubric
+# Installation
 
-Your efforts will be graded using a single point rubric (see below). You will have to pass the criterion (centre column) to pass the course. During the test you will be consulted and will be given feedback on things we think deficient and things we think are an improvement on the criterion.
+If you're wondering how to install my application, simply follow the following steps:
 
-| Deficiency | Criterion | Improvement |
-|:--|:--|:--|
-|  | *User Interface* - you design, build and test the user interface by applying interface design principles |  |
-|  | *Code structure* - you write modular, consistent and efficient HTML, CSS and JavaScript code by applying structure and best practices. You manage state for the application and the UI |  |
-|  | *Data management* - you understand how you can work with an external API using asynchronous code. You can retrieve data, manipulate and dynamically convert it to structured html |  |
-|  | *Project* - your app is working and published on GitHub Pages. Your project is thoroughly documented in the `README.md` file in your repository.  |  |
+1. Clone this repository on your local machine with `git clone https://github.com/rvdegroen/web-app-from-scratch-2223.git`
+2. Make sure you install the `live server` extension if you're using VSCode
+3. Go into the `spa` folder, where you can find the application
+4. Start the application by clicking on the live server extension and you're all set
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+# License
 
-<!-- ☝️ replace this description with a description of your own work -->
+The source code is distributed under the GPL-2.0 license. See LICENSE.md for more information.
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+# Wishlist
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+This is my wishlist:
 
-<!-- Maybe a table of contents here? 📚 -->
+- [x] Hash routing
+- [x] Responsive design
+- [x] Filtering
+- [ ] Loading state
+- [ ] Zero State
+- [x] Error state
+- [x] Ideal sate
+- [x] Write Wiki
+- [x] Clean code
+- [x] Fetch and displaying data from an api
+- [ ] Activity diagram
+- [x] ReadMe
+- [ ] Better styling
 
-<!-- How about a section that describes how to install this project? 🤓 -->
+# Resources
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+I have put most sources in between my code where I used the code. I also used https://openai.com/blog/chatgpt sometimes and changed the code. Mostly used it in the beginning of this project for inspiration.
