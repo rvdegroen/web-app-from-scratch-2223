@@ -1,6 +1,7 @@
 import { initCharacters } from "./characters.js";
 import { initGame } from "./game.js";
 
+// source: https://dev.to/thedevdrawer/single-page-application-routing-using-hash-or-url-9jh
 const routes = {
   "/": {
     element: "pageHome",
